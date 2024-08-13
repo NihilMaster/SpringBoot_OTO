@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "ab856d48-c1a5-473f-b15e-101864174659",
+		"name": "SpringBoot",
+		"description": "Peticiones para el repositorio:\n\n[https://github.com/NihilMaster/SpringBoot_Basics](https://github.com/NihilMaster/SpringBoot_Basics)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22734484"
+	},
+	"item": [
+		{
+			"name": "Instructors",
+			"item": [
+				{
+					"name": "Instructor",
+					"item": [
+						{
+							"name": "GetInstructors",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instructors",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instructors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetInstructorsById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instructors/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instructors",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateInstructors",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Santiago\",\r\n        \"lastName\": \"idk\",\r\n        \"email\": \"sidk@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/instructors",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instructors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteInstructors",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instructors/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instructors",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutInstructors",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Santiago\",\r\n        \"lastName\": \"idk\",\r\n        \"email\": \"s_idk@mail.com\",\r\n        \"detail\":{\r\n            \"id\":1\r\n        }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/instructors/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instructors",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RelateInstructorWithDetail",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/instructors/3/detail/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"instructors",
+										"3",
+										"detail",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Detail",
+					"item": [
+						{
+							"name": "GetDetails",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/details",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetDetailsById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/details/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"details",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CreateDetail",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"canalName\": \"wtf\",\r\n    \"hobby\": \"speak\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/details",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"details"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PutDetail",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"canalName\": \"wth\",\r\n    \"hobby\": \"speak\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/details/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"details",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteDetail",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/details/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"details",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			],
+			"description": "Cuarto ejercicio del video:  \n[https://youtu.be/mgXmTZZCsbI](https://youtu.be/mgXmTZZCsbI?list=PLRI0n5fbTtwM2N096ciRF4Jg_8HvhZn9r)\n\nRepositorio:\n\n[https://github.com/NihilMaster/SpringBoot_OTO.git](https://github.com/NihilMaster/SpringBoot_OTO.git)"
+		}
+	]
+}
